@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* ### Primary */
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%); 
+    /* ### Accent */
+    --Blue: hsl(248, 32%, 49%);
+    /* ### Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+body, .main {
+    width: 100vw;
+    height: 100vh;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 3em 6em;
+    background-color: var(--Red);
+    background-image: url("images/bg-intro-desktop.png");
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.left-container, .right-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-container {
+    margin-right: 3em;
+}
+.left-h1 {
+    font-size: 4vw;
+    margin-bottom: .5em;
+}
+.left-p {
+    font-size: 1.3vw;
+}
+.right-container {}
+.right-top {
+    background-color: var(--Blue);
+    width: 100%;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 9px -2px rgb(78, 78, 78);
+}
+.r-t-span {
+    font-weight: 700;
+}
+.r-t-h2 {
+    font-size: 1vw;
+    font-weight: 400;
+}
+.right-btm {
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 5px 9px -2px rgb(78, 78, 78);
+    padding: 0 1.5em;
+}
+.myForm {}
+.label {
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    padding: .5em 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.inp {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+.inp::placeholder {
+    color: var(--Dark-Blue);
+    font-size: 1vw;
+    font-weight: 600;
+}
+.error-d {
+    width: 1.7vw;
+    display: none;
+}
+.msg {
+    display: none;
+    color: var(--Red);
+    float: right;
+    font-size: .9vw;
+    font-weight: 500;
+}
+.claim-div {
+    width: 100%;
+    margin-top: 2em;
+    border: none;
+    outline: none;
+    padding: 1em;
+    box-shadow: 0px 5px 9px -2px rgb(78, 78, 78);
+    border-radius: 5px;
+    background-color: var(--Green);
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.claim {
+    width: 100%;
+}
+.claim:hover {
+    cursor: pointer;
+    filter: brightness(125%);
+}
+.terms {
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+    font-size: .7vw;
+    text-align: center;
+    margin: 2vw 0;
+}
+.terms-span {
+    color: var(--Red);
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        background-image: url("images/bg-intro-mobile.png");
+    }
+    .left-container, .right-container {
+        width: 100%;
+        height: 100%;
+    }
+    .left-container {
+        margin-right: 0;
+        text-align: center;
+    }
+    .left-h1 {
+        font-size: 8vw;
+    }
+    .left-p {
+        font-size: 3.5vw;
+        margin-bottom: 2em;
+    }
+    .right-top {
+        width: 100%;
+        padding: .5em 4em;
+    }
+    .r-t-h2 {
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    .right-btm {
+        width: 100%;
+    }
+    .label {
+        /* padding: .5em 1em; */
+    }
+    .inp::placeholder {
+        font-size: 3vw;
+    }
+    .error-d {
+        width: 5vw;
+    }
+    .msg {
+        margin-bottom: 1em;
+        font-size: 2.5vw;
+    }
+    .claim {
+        font-size: 3vw;
+    }
+    .terms {
+        font-size: 3.5vw;
+        margin-top: 3vw;
+    }
+}
