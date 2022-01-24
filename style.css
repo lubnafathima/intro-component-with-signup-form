@@ -119,6 +119,7 @@ body, .main {
     cursor: pointer;
 }
 .claim {
+    text-align: center;
     width: 100%;
 }
 .claim:hover {
