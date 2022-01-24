@@ -1,5 +1,5 @@
 'use strict';
-
+console.log("working");
 let values = document.querySelectorAll("#inp");
 let claim = document.querySelector(".claim");
 
